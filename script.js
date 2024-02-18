@@ -27,15 +27,15 @@ let answer = "0"
             updateDisplay();
         }
 
-        function operate() {
-                try{
+          function operate() {
+            try{
                 const result = eval(expression);
                 answer = result.toString();
                 console.log(result)
                 console.log(result.toString())
                 expression = result.toString();
                 updateDisplay();
-                }catch(error){
-                        clearInput()
-                }
+            }catch(error){
+                clearInput()
+            }
         }

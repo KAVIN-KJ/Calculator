@@ -28,7 +28,11 @@ let answer = "0"
         }
 
         function operate() {
+                try{
                 const result = eval(expression);
+                }catch(error){
+                        clearInput()
+                }
                 answer = result.toString();
                 console.log(result)
                 console.log(result.toString())

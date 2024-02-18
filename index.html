@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="numpad">
+            <h2 style="text-align: center;">CALCULATOR</h2>
+            <textarea rows="20" id="expression" cols="50" class="expression" value="0"></textarea>
+            <div class="numbers">
+                <div class="row0">
+                    <button onclick="{clearInput()}" class="button">C</button>
+                    <button onclick="backSpace()" id="backspace" class="button">&#9003;</button>
+                    <button onclick="handleInput('%')" class="button">%</button>
+                    <button onclick="handleInput('+')" class="button">+</button>
+                </div>
+                <div class="row1">
+                    <button onclick="handleInput('1')" class="button1">1</button>
+                    <button onclick="handleInput('2')" class="button2">2</button>
+                    <button onclick="handleInput('3')" class="button3">3</button>
+                    <button onclick="handleInput('-')" class="button">-</button>
+                </div>
+                <div class="row2">
+                    <button onclick="handleInput('4')" class="button4">4</button>
+                    <button onclick="handleInput('5')" class="button5">5</button>
+                    <button onclick="handleInput('6')" class="button6">6</button>
+                    <button onclick="handleInput('*')" class="button">*</button>
+                </div>
+                <div class="row3">
+                    <button onclick="handleInput('7')" class="button7">7</button>
+                    <button onclick="handleInput('8')" class="button8">8</button>
+                    <button onclick="handleInput('9')" class="button9">9</button>
+                    <button onclick="handleInput('/')" class="button">/</button>
+                </div>
+                <div class="row4">
+                    <button onclick="handleInput('0')" class="button">0</button>
+                    <button onclick="handleInput('.')" class="button">.</button>
+                    <button onclick="handleInput(answer)" class="button">Ans</button>
+                    <button onclick="operate()" class="equals">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>
